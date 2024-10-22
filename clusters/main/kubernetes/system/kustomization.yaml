@@ -17,6 +17,3 @@ resources:
   - topolvm/ks.yaml
   - traefik-crds/ks.yaml
   - volsync/ks.yaml
-  - nvidia-gpu-operator/ks.yaml
-  - lvm-dsik-watcher/ks.yaml
-  - lvm-disk-watcher/ks.yaml
