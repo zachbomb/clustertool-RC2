@@ -52,7 +52,6 @@ machine:
   files:
     - path: "/etc/cri/conf.d/20-customization.part"
       permissions: 0
-      op: "create"
       content: |
         [plugins."io.containerd.grpc.v1.cri"]
           enable_unprivileged_ports = true
@@ -64,7 +63,6 @@ machine:
 
     - path: "/etc/nfsmount.conf"
       permissions: 420
-      op: "overwrite"
       content: |
         [ NFSMount_Global_Options ]
         nfsvers=4.2
